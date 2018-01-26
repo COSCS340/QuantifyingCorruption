@@ -1,7 +1,7 @@
 # Quantifying Corruption Project Proposal
-William Lifferth  
-Chris Dean  
-Andrey Karnauch  
+William Lifferth
+Chris Dean
+Andrey Karnauch
 Kelsey Veca
 
 ## Introduction
@@ -69,9 +69,9 @@ Student at UT, majoring in Computer Science with a minor in cyber security.
   - Fixed role at the start, fill in as needed
 
 ### Lifferth, William
-William Lifferth is a student at the University of Tennessee studying computer science and machine learning. He is the president of the VolHacks Hackathon and the UTK Machine Learning club.  
+William Lifferth is a student at the University of Tennessee studying computer science and machine learning. He is the president of the VolHacks Hackathon and the UTK Machine Learning club.
 - Skills
-  - Python  
+  - Python
   - Django
   - Node.js
   - Web Development
@@ -113,3 +113,4 @@ _This is a rough schedule that is subject to change_
 - Spring 6: Data visualizations finished
 
 ## Reflection
+Our team is proposing a website to display data about governmental corruption. For this project our customer is anyone interested in promoting a free and open government, such as govermnent monitoring firms or the general population. We are all very excited to put together this project
