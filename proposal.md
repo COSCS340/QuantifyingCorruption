@@ -49,12 +49,12 @@ We'll try to keep things simple and only use tools when they're needed. We'll us
 ### Dean, Chris
 Chris Dean is a is a student at the University of Tennessee studying computer science and mathematics. He is the Events Directory of HackUTK and Volunteer Coordinator of Volhacks Hackathon.
 - Skills
- - Python
- - SQl
- - Javascript
+  - Python
+  - SQl
+  - Javascript
 - Roles
- - Heroku Integrator
- - Model Designer
+  - Heroku Integrator
+  - Model Designer
 
 ### Karnauch, Andrey
 Student at UT, majoring in Computer Science with a minor in cyber security.
@@ -89,6 +89,16 @@ Kelsey Veca is a student of the University of Tennessee - Knoxville studying com
   - UX Engineer
 
 ## Project Management
+<<<<<<< HEAD
+###Constraints
+Although we have considered the potential for emotional and professional ramifications, we feel the obligation expose political corruption. We also recognize that we cannot accept donations from political parties as that could influence our message and reliability.
+
+###Resources
+This is a joint project to collect and present corruption data. The information will be provided by another team.
+
+###Descoping
+If we are unable to implement all the desired functionality, our system will still be able to operate at some capacity. It will at the very least act as a reference for political corruption. It could, however, be missing some features that would improve utility and user-friendliness.
+=======
 ### Schedule
 _This is a rough schedule that is subject to change_
 - Sprint 1: Django project set up that deploys to heroku and serves a blank page
@@ -98,5 +108,6 @@ _This is a rough schedule that is subject to change_
 - Sprint 5: Search functionality finished
 - Spring 6: Data visualizations finished
 
+>>>>>>> refs/remotes/origin/proposal
 
 ## Reflection
