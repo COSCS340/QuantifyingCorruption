@@ -3,13 +3,15 @@ William Lifferth
 Chris Dean  
 Andrey Karnauch  
 Kelsey Veca
+
 ## Introduction
 The United States spent 3.15 billion dollars on lobbying in 2016. The trend of lobbying in the United States
 has only risen over the years. Lobbying is intended to give the stakeholders of certain policies a direct method
 of communicating with their representatives. The failing of this system is that it gives disproportionate amount
 of influence to those with more financial resources. This creates an undesirable scenario where those with more
 economic resources will pursue goals that reinforce their control over those resources, without regard for the
-well-being of others. Previously this issue has been explored statistically, but in order to truly be made operational it must be presented in an format that is both accessible and easily understood.  
+well-being of others. Previously this issue has been explored statistically, but in order to truly be made operational it must be presented in an format that is both accessible and easily understood.
+
 We plan to create a free web app to allow the average citizen to check how their representatives are behaving. The lack of clear monetization strategies has discouraged market forces from producing a similar offering, so ours will be the first of its kind.
 
 ## Customer Value
@@ -90,13 +92,17 @@ Kelsey Veca is a student of the University of Tennessee - Knoxville studying com
 
 ## Project Management
 ###Constraints
+
 Although we have considered the potential for emotional and professional ramifications, we feel the obligation expose political corruption. We also recognize that we cannot accept donations from political parties as that could influence our message and reliability.
 
 ###Resources
+
 This is a joint project to collect and present corruption data. The information will be provided by another team.
 
 ###Descoping
+
 If we are unable to implement all the desired functionality, our system will still be able to operate at some capacity. It will at the very least act as a reference for political corruption. It could, however, be missing some features that would improve utility and user-friendliness.
+
 ### Schedule
 _This is a rough schedule that is subject to change_
 - Sprint 1: Django project set up that deploys to heroku and serves a blank page
