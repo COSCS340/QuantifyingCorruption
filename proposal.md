@@ -91,15 +91,15 @@ Kelsey Veca is a student of the University of Tennessee - Knoxville studying com
   - UX Engineer
 
 ## Project Management
-###Constraints
+### Constraints
 
 Although we have considered the potential for emotional and professional ramifications, we feel the obligation expose political corruption. We also recognize that we cannot accept donations from political parties as that could influence our message and reliability.
 
-###Resources
+### Resources
 
 This is a joint project to collect and present corruption data. The information will be provided by another team.
 
-###Descoping
+### Descoping
 
 If we are unable to implement all the desired functionality, our system will still be able to operate at some capacity. It will at the very least act as a reference for political corruption. It could, however, be missing some features that would improve utility and user-friendliness.
 
