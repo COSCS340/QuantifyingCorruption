@@ -1,9 +1,8 @@
 # Quantifying Corruption Project Proposal
-William Lifferth
-Chris Dean
-Andrey Karnauch
+William Lifferth  
+Chris Dean  
+Andrey Karnauch  
 Kelsey Veca
-
 ## Introduction
 The United States spent 3.15 billion dollars on lobbying in 2016. The trend of lobbying in the United States
 has only risen over the years. Lobbying is intended to give the stakeholders of certain policies a direct method
@@ -14,7 +13,23 @@ well-being of others. Previously this issue has been explored statistically, but
 We plan to create a free web app to allow the average citizen to check how their representatives are behaving. The lack of clear monetization strategies has discouraged market forces from producing a similar offering, so ours will be the first of its kind.
 
 ## Customer Value
-Assigned Andrey
+### Customer Need
+Our customer consists of a group of students currently participating in an independent study. Their study dives deep into how lobbyist/donator party affiliation affects the political party affiliation of the representatives on the receiving end. This project requires lots of data analysis to track every donation made to every representative and has the potential to shed light on some representatives who are more "corrupt" than others based on how much donors' party affiliation sways theirs.
+
+The customer wants our team to take these findings and present them in a web app that is accessible to anyone curious about certain government representatives and their level of "corruption" based on the criteria above. With our help, the customer's base project gains a new level of meaning by not only identifying potential patterns of corruption, but also informing the citizens of America about these findings (by making the database searchable).
+
+Because this project has the potential to reveal a lot about politicians in a time when politics are an extremely hot topic, we could expect to receive some recognition in the context of the market, whether it is user traffic, offers from interested third parties, or more. However, this relies both on the customer's final product in conjunction with ours, and the exposure of our web app once finished.
+
+### Proposed Solution
+Our team's solution will deliver a web application that queries the customer's database of government representatives that have been analyzed. The customer will have control over what goes in the database, and our web app will simply help search it and help visualize/display the results for the users.
+
+This benefits the customer by allowing them to focus solely on filtering through donation history and identifying correlations between lobbyists and representatives, hopefully resulting in more accurate results on their end. Furthermore, the customer can work with us directly to dictate any styling, form submission, or graphic decisions that they envision for their base project.
+
+### Measures of Success
+Because of our direct, in-person communication with the customer, we will know if our product is satisfactory or not based on constant communication. Furthermore, we can see as a group whether or not we have met their requirements along with the goals we set for ourselves at the start of the project. For example, did we deliver just a search bar that spits out raw database data for each name searched, or did we produce an elegant search interface with partial matching and formatted results? These customer-centric measures of success are as follows:
+- Provide a search bar that queries the customer's database
+- Display results of searches in an elegant and meaningful manner
+- Deliver a modern looking set of pages and styling to attract users
 
 ## Technology
 ### Heroku
@@ -40,7 +55,17 @@ Chris Dean is a is a student at the University of Tennessee studying computer sc
 - Roles
  - Heroku Integrator
  - Model Designer
+
 ### Karnauch, Andrey
+Student at UT, majoring in Computer Science with a minor in cyber security.
+- Skills
+  - C/C++, Python, LaTeX
+  - Little experience with web development
+  - New to most of the tools used in this project
+- Roles
+  - Assigned: Templates and styling
+  - Fixed role at the start, fill in as needed
+  
 ### Lifferth, William
 William Lifferth is a student at the University of Tennessee studying computer science and machine learning. He is the president of the VolHacks Hackathon and the UTK Machine Learning club.  
 - Skills
@@ -52,6 +77,7 @@ William Lifferth is a student at the University of Tennessee studying computer s
 - Roles
   - Engineering Lead
   - Solutions Architect
+  - Data Scientist
 
 ### Veca, Kelsey
 
