@@ -80,6 +80,15 @@ William Lifferth is a student at the University of Tennessee studying computer s
   - Data Scientist
 
 ### Veca, Kelsey
+Kelsey Veca is a student of the University of Tennessee - Knoxville studying computer science and Spanish. She is a volunteer coordinator of the VolHack Hackathon club.
+- Skills
+  - C / C++
+  - HTML / CSS
+  - JavaScript
+- Roles
+  - UX Engineer
+
+
 
 ## Project Management
 
