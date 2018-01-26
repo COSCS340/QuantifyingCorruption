@@ -65,7 +65,7 @@ Student at UT, majoring in Computer Science with a minor in cyber security.
 - Roles
   - Assigned: Templates and styling
   - Fixed role at the start, fill in as needed
-  
+
 ### Lifferth, William
 William Lifferth is a student at the University of Tennessee studying computer science and machine learning. He is the president of the VolHacks Hackathon and the UTK Machine Learning club.  
 - Skills
@@ -88,8 +88,15 @@ Kelsey Veca is a student of the University of Tennessee - Knoxville studying com
 - Roles
   - UX Engineer
 
-
-
 ## Project Management
+### Schedule
+_This is a rough schedule that is subject to change_
+- Sprint 1: Django project set up that deploys to heroku and serves a blank page
+- Sprint 2: Static templates for all our views
+- Sprint 3: Models and databases are built and integrated locally and on heroku
+- Sprint 4: Views (generally called controllers outside of django) built to deliver data to served templates
+- Sprint 5: Search functionality finished
+- Spring 6: Data visualizations finished
+
 
 ## Reflection
