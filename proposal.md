@@ -49,12 +49,12 @@ We'll try to keep things simple and only use tools when they're needed. We'll us
 ### Dean, Chris
 Chris Dean is a is a student at the University of Tennessee studying computer science and mathematics. He is the Events Directory of HackUTK and Volunteer Coordinator of Volhacks Hackathon.
 - Skills
- - Python
- - SQl
- - Javascript
+  - Python
+  - SQl
+  - Javascript
 - Roles
- - Heroku Integrator
- - Model Designer
+  - Heroku Integrator
+  - Model Designer
 
 ### Karnauch, Andrey
 Student at UT, majoring in Computer Science with a minor in cyber security.
