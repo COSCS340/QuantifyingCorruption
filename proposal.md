@@ -32,6 +32,14 @@ We'll try to keep things simple and only use tools when they're needed. We'll us
 
 ## Team
 ### Dean, Chris
+Chris Dean is a is a student at the University of Tennessee studying computer science and mathematics. He is the Events Directory of HackUTK and Volunteer Coordinator of Volhacks Hackathon.
+- Skills
+ - Python
+ - SQl
+ - Javascript
+- Roles
+ - Heroku Integrator
+ - Model Designer
 ### Karnauch, Andrey
 ### Lifferth, William
 William Lifferth is a student at the University of Tennessee studying computer science and machine learning. He is the president of the VolHacks Hackathon and the UTK Machine Learning club.  
