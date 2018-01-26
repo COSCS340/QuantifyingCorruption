@@ -89,7 +89,6 @@ Kelsey Veca is a student of the University of Tennessee - Knoxville studying com
   - UX Engineer
 
 ## Project Management
-<<<<<<< HEAD
 ###Constraints
 Although we have considered the potential for emotional and professional ramifications, we feel the obligation expose political corruption. We also recognize that we cannot accept donations from political parties as that could influence our message and reliability.
 
@@ -107,7 +106,5 @@ _This is a rough schedule that is subject to change_
 - Sprint 4: Views (generally called controllers outside of django) built to deliver data to served templates
 - Sprint 5: Search functionality finished
 - Spring 6: Data visualizations finished
-
->>>>>>> refs/remotes/origin/proposal
 
 ## Reflection
