@@ -97,7 +97,6 @@ This is a joint project to collect and present corruption data. The information 
 
 ###Descoping
 If we are unable to implement all the desired functionality, our system will still be able to operate at some capacity. It will at the very least act as a reference for political corruption. It could, however, be missing some features that would improve utility and user-friendliness.
-=======
 ### Schedule
 _This is a rough schedule that is subject to change_
 - Sprint 1: Django project set up that deploys to heroku and serves a blank page
