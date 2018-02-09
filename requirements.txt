@@ -1,0 +1,4 @@
+dj-database-url==0.4.2
+Django==2.0.2
+pytz==2018.3
+whitenoise==3.3.1
