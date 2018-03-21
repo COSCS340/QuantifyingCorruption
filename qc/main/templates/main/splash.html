@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block body %}
+<style type="text/css">
+body {
+    background-image: url('{% static 'main/capitolBuilding.jpeg' %}');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</style>
+<div id="splash-background">
+    <div class="center-col">
+        <img id="main-logo" src="{% static 'main/QCMarkText.png' %}"/>
+    </div>
+    </div>
+</div>
+{% endblock %}
+
