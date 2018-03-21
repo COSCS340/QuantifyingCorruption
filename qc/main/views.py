@@ -8,5 +8,4 @@ def helloworld(request):
 
 def splash(request):
     context = {}
-    return HttpResponse("You made it to a splash page")
-    # return render(request, 'main/splash.html', context)
+    return render(request, 'main/splash.html', context)

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#"><span class="logo-text">QC Logo</a>
+          <a class="navbar-brand" href="#"><img id="top-logo" src="{% static 'main/QCMarkText.png' %}"></a>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li class="active"><a href="#">Home</a></li>

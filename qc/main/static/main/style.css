@@ -69,6 +69,10 @@
   }
 }
 
+#top-logo {
+    max-width: 200px;
+}
+
 /* Footer */
 html {
   position: relative;
@@ -95,3 +99,19 @@ body > .container {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+/* Splash */
+#main-logo {
+    max-width: 100%;
+}
+
+.center-col {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+#main-logo {
+    padding-top: 100px;
+}
+
