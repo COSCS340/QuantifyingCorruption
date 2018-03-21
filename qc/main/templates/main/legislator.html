@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block body %}
+<div class="row">
+    <div class="col-xs-12">
+        {{ legislator.name }}
+    </div>
+</div>
+<div class="row">
+    <div class="cols-xs-4">
+        {{ legislator.party }}
+    </div>
+    <div class="col-xs-8">
+        {{ legislator.state }}
+    </div>
+</div>
+{% endblock %}
