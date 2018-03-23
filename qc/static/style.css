@@ -1,71 +1,78 @@
 /* Navbar colors */
 .navbar-default {
-  background-color: #c0c0c0;
-  border-color: #ffffff;
+  background-color: #332f2f;
+  border-color: #332f2f;
+  font-size: 1.3em;
 }
 .navbar-default .navbar-brand {
-  color: #000000;
+  color: #f7f9f9;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #add8e6;
+  font-weight: bold;
+  color: #7abace;
 }
 .navbar-default .navbar-text {
-  color: #000000;
+  color: #f7f9f9;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #000000;
+  color: #f7f9f9;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #add8e6;
+  color: #7abace;
+  font-weight: bold;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #add8e6;
-  background-color: #ffffff;
+  color: #7abace;
+  font-weight: bold;
+  background-color: #332f2f;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #add8e6;
-  background-color: #ffffff;
+  color: #7abace;
+  background-color: #332f2f;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ffffff;
+  border-color: #332f2f;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ffffff;
+  background-color: #332f2f;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #000000;
+  background-color: #f7f9f9;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #000000;
+  border-color: #f7f9f9;
 }
 .navbar-default .navbar-link {
-  color: #000000;
+  color: #f7f9f9;
 }
 .navbar-default .navbar-link:hover {
-  color: #add8e6;
+  color: #7abace;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #000000;
+    color: #f7f9f9;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #add8e6;
+    color: #7abace;
+    font-weight: bold;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #add8e6;
-    background-color: #ffffff;
+    color: #7abace;
+    font-weight: bold;
+    background-color: #332f2f;
   }
 }
 
@@ -86,9 +93,12 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 50px;
-  background-color: #c0c0c0;
+  background-color: #000000;
+}
+
+.footer p {
+  color: #7abace;
 }
 
 body > .container {
