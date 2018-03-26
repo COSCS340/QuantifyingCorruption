@@ -1,5 +1,6 @@
 {% extends 'main/base.html' %}
 {% block body %}
+{% include 'main/search-bar.html' %}
 {% for result in results %}
 <div class="content-box">
   <div class="content-box-title">{{ result.name }}</div>

@@ -11,15 +11,20 @@ def splash(request):
     context = {}
     return render(request, 'main/splash.html', context)
 
-def search(request, query):
+def search(request):
     context = {}
-    results = set()
-    legislators = Legislator.objects.all()
-    for filter_field in Legislator._meta.get_fields():
-        for result in legislators.filter(**{filter_field.name + "__icontains": query}).all():
-            results.add(result)
-    print(results)
-    context['results'] = list(results)
+    print(dir(request))
+    if request.method == "POST":
+        query = request.POST['query']
+        results = set()
+        legislators = Legislator.objects.all()
+        for filter_field in Legislator._meta.get_fields():
+            for result in legislators.filter(**{filter_field.name + "__icontains": query}).all():
+                results.add(result)
+        print(results)
+        context['results'] = list(results)
+    else:
+        context['results'] = list()
     return render(request, 'main/search.html', context)
 
 def legislator(request, legislator_id):

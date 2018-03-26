@@ -141,3 +141,19 @@ body > .container {
 #main-logo {
     padding-top: 80px;
 }
+
+
+/* Search Bar */
+.search-bar {
+  padding: 20px;
+}
+
+.search-bar-box {
+  width: 100%;
+  padding: 10px;
+}
+
+.search-bar-submit {
+  width: 100%;
+  padding: 10px;
+}
