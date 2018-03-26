@@ -1,3 +1,20 @@
+/* General */
+
+body {
+  background-color: #404040;
+}
+
+.content-box {
+  background-color: #777;
+  color: white;
+  margin: 20px 5px;
+  padding: 20px;
+}
+
+.content-box-title {
+  font-size: 30px;
+}
+
 /* Navbar colors */
 .navbar-default {
   background-color: #332f2f;

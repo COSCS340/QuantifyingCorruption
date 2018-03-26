@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+{% block body %}
+{% for result in results %}
+<div class="content-box">
+  <div class="content-box-title">{{ result.name }}</div>
+  <br>
+  State: {{ result.state }}
+  <br>
+  Party: {{ result.party }}
+</div>
+{% endfor %}
+{% endblock %}
