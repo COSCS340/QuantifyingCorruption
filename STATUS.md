@@ -17,17 +17,21 @@ In terms of changes and major events since our proposal:
 
 ## Customer Value
 Changes in Customer Value/Requirements/Measures of Success:
-1. Something about the data being provided here
+1. No data being received on Bills
    - **Date**: Sprint 3
    - **Motivation**: Time constraints
-   - **Desc**: ...
-2. "Provide a search bar that queries the customer's database"
+   - **Desc**: We were orginally going to be receiving donation data both on legislators and bills, however, we are now only receiving data on legislators, which is still fine and narrows our scope.
+2. Honing on NRA donations
+   - **Date**: Sprint 3
+   - **Motivation**: Current events
+   - **Desc**: Our customer is now also honing in on NRA donations that legislators receive due to the changing political climate.
+3. "Provide a search bar that queries the customer's database"
    - No changes, still a main requirement that is on track
-3. "Display results of searches in an elegant and meaningful manner"
+4. "Display results of searches in an elegant and meaningful manner"
    - **Date**: Sprint 4
    - **Motivation**: Desire to meet the "elegant and meaningful" Requirements
    - **Desc**: This Measure of Success was built on during Sprint 4 when we decided to use D3.js for visualization. We believe this will help us both meet the original requirement and also extend it to something more meaningful.
-4. "Deliver a modern looking set of pages and styling to attract users"
+5. "Deliver a modern looking set of pages and styling to attract users"
    - **Date**: Sprint 3
    - **Motivation**: Thematic elements to go along with "political corruption"
    - **Desc**: Rather than just going for a purely modern look, we decided to adjust this requirement a bit to also account for thematic elements. We ended up with a combination between modern and symbolic for our splash page.
