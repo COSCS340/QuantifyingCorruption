@@ -13,6 +13,7 @@ Since our proposal, we have made a fair amount of progress on our project. The p
 In terms of changes and major events since our proposal:
  - Deciding to Dockerize our project
  - Increasing dependency on our customer to deliver their data
+ - Change in customer data being provided (noted in Customer Value)
  - Using D3.js for data visualization
 
 ## Customer Value
