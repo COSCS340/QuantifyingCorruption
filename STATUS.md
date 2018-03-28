@@ -54,22 +54,25 @@ Changes in Customer Value/Requirements/Measures of Success:
 **Upcoming Goals**:
 
 For our next iteration, we are planning to focus heavily on the data/customer aspect of this project. We are hoping to obtain a lot more data, transfer this data from local to online storage, and work on visualization of returned search data. We feel this is an integral part of our project which needs to be addressed over the next couple of weeks in order to having a "working" product.
+
 ## Team
 Team member roles since the start of this project:
   1. William Lifferth
-    - Project lead, main contributor and project designer
+     - Project lead, main contributor and project designer
   2. Andrey Karnauch
-    - Initial html/styling and organizing issues/sprints
+     - Initial html/styling and organizing issues/sprints
   3. Chris Dean
-    - Initial Heroku integrator and model designer
+     - Initial Heroku integrator and model designer
   4. Kelsey Veca
-    - UX Engineer
+     - UX Engineer
 
 Going forward, these roles are expected to change a bit. William will continue to take on his leading role with the rest of team trying to provide more support throughout these last couple of sprints. For example, Andrey will be dealing with D3 visualization, Chris will be working with Docker, and Kelsey will be working on the **About** page along with updating the navbar.
+
 ## Project Management
 As of now, the product is on schedule, but we would have liked to maybe be just a bit further down the road. However, with that being said, we are happy with our current site and are eager to add more functionality as the customer delivers more data.
 
 Since the start of the semester, the schedule has changed quite a bit. For example, we struggled with dragging certain elements of the project out over sprints and instead ended up doing them within short bursts instead. Also, we have not communicated with our customer as often as we would have liked, which means we have to establish a strong line between our team and theirs within these last couple of sprints in order to meet requirements and deliver a "working" product.
+
 ## Reflection
 - What went well?
   - For the most part, we organized our Github issues and milestones pretty well. In terms of our product, we came together on a symbolic yet modern looking theme for the website.  We also felt good about the demo recently and our ability to transition into providing functionality within our product.
