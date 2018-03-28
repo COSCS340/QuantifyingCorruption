@@ -39,6 +39,7 @@ Changes in Customer Value/Requirements/Measures of Success:
 ## Technology
 
 **Architecture**:
+The core framework we're using for this project is Django which is written in Python. Django by default uses a SQLite database to store default django records (mostly users) and our custom models. We utilize the Jinja templating engine to put custom data into our html web pages, and a bootstrap frontend with vanilla javascript. We are hosting our project on a Heroku backend that supplies us with a platform without needing to configure or maintain our own virtual server; the Heroku backend uses a PostgreSQL database.
 
 **Goals**:
 - Our most recent goal was to have a sense of functionality within our website. We had the splash page set up and a legislator model in Django, but lacked any functionality between the static page and our database. Thus, our goal was to implement the search functionality required to query the database and then display the gathered information.
