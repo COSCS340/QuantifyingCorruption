@@ -151,9 +151,11 @@ body > .container {
 .search-bar-box {
   width: 100%;
   padding: 10px;
+  color: black;
 }
 
 .search-bar-submit {
   width: 100%;
   padding: 10px;
+  color: black;
 }
