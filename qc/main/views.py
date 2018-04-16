@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Legislator
+from .models import Donation
 
 # Create your views here.
 def helloworld(request):
@@ -36,6 +37,15 @@ def legislator(request, legislator_id):
 def about(request):
     context = {}
     return render(request, 'main/about.html', context=context)
+
+def results(request):
+    context = {}
+    id = request.GET.get('id_name')
+    if (id != None):
+        dono = Donation.objects.get(identifier=id)
+        context['results'] = dono
+    print(context)
+    return render(request, 'main/results.html', context=context)
 
 class SearchResult:
     def __init__(self, title, text, link):
