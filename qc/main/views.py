@@ -37,6 +37,21 @@ def about(request):
     context = {}
     return render(request, 'main/about.html', context=context)
 
+def populate(request):
+    context = { "success" : "success" }
+    try:
+        with open("../data/qc-working.csv", "r") as f:
+            for line in f:
+                l = Legislator(*[ line.split(",") ])
+                l.save()
+                pass
+    except Exception as e:
+        context["success"] = "Failed"
+        context["error"] = str(e)
+
+    return render(request, 'main/populate.html', context=context)
+
+
 class SearchResult:
     def __init__(self, title, text, link):
         self.title = title
