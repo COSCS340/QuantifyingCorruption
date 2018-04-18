@@ -39,10 +39,12 @@ def about(request):
 
 def populate(request):
     context = { "success" : "success" }
+    fields = ["name", "party", "state" ]
     try:
         with open("../data/qc-working.csv", "r") as f:
+            f.readline()
             for line in f:
-                l = Legislator(*[ line.split(",") ])
+                l = Legislator(**dict(zip(fields, line.split(",")[3:6])))
                 l.save()
                 pass
     except Exception as e:
