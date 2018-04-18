@@ -16,11 +16,7 @@
       <div class="navbar-header">
           <a class="navbar-brand" href="/"><img id="top-logo" src="{% static 'main/QCMarkText.png' %}"></a>
     </div>
-    <ul class="nav navbar-nav navbar-left">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="/search">Search</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
+      {% block menuextend %}{% endblock %}
   </div>
 </nav>
 

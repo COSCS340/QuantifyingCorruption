@@ -33,6 +33,10 @@ def legislator(request, legislator_id):
     print(context['legislator'].party)
     return render(request, 'main/legislator.html', context)
 
+def about(request):
+    context = {}
+    return render(request, 'main/about.html', context=context)
+
 class SearchResult:
     def __init__(self, title, text, link):
         self.title = title

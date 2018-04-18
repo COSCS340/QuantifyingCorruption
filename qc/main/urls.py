@@ -6,5 +6,6 @@ urlpatterns = [
     path('search', views.search, name='search'),
     path('legislator/<int:legislator_id>', views.legislator, name='legislator'),
     path('hello/', views.helloworld, name='helloworld'),
+    path('about/', views.about, name='about'),
     path('', views.splash, name='splash'),
 ]
