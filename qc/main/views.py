@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Legislator
-from .models import Donation
 
 # Create your views here.
 def helloworld(request):
@@ -42,7 +41,7 @@ def results(request):
     context = {}
     id = request.GET.get('id_name')
     if (id != None):
-        dono = Donation.objects.get(identifier=id)
+        dono = Legislator.objects.get(identifier=id)
         context['results'] = dono
     print(context)
     return render(request, 'main/results.html', context=context)
