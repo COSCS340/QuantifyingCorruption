@@ -7,19 +7,13 @@ class Legislator(models.Model):
     name = models.CharField(max_length=100)
     state = models.CharField(max_length=2)
     party = models.CharField(max_length=2, choices=PARTY, default='I')
-    identifier = models.CharField(max_length=9, default='NULL')
-
-class Donation(models.Model):
     identifier = models.CharField(max_length=9)
-    name = models.CharField(max_length=100)
-    mean = models.DecimalField(max_digits=10, decimal_places=7)
-    individual = models.IntegerField()
-    pac = models.IntegerField()
-    donoSetOne = models.IntegerField()
-    donoSetTwo = models.IntegerField()
-    donoSetThree = models.IntegerField()
-    donoSetFour = models.IntegerField()
-    donoSetFive = models.IntegerField()
-
-
-
+    mean = models.FloatField(default=0)
+    median = models.FloatField(default=0)
+    individual = models.FloatField(default=0)
+    pac = models.FloatField(default=0)
+    donoSetOne = models.FloatField(default=0)
+    donoSetTwo = models.FloatField(default=0)
+    donoSetThree = models.FloatField(default=0)
+    donoSetFour = models.FloatField(default=0)
+    donoSetFive = models.FloatField(default=0)
