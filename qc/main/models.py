@@ -16,4 +16,3 @@ class Legislator(models.Model):
     donoSetTwo = models.FloatField(default=0)
     donoSetThree = models.FloatField(default=0)
     donoSetFour = models.FloatField(default=0)
-    donoSetFive = models.FloatField(default=0)
