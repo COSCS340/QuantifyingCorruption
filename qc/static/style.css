@@ -4,6 +4,10 @@ body {
   background-color: #404040;
 }
 
+.display-1 {
+  color: #FFFFFF;
+  font-size: 46px;
+}
 .content-box {
   background-color: #777;
   color: white;
@@ -111,7 +115,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 50px;
-  background-color: #000000;
+  background-color: #332f2f;
 }
 
 .footer p {

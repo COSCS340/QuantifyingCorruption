@@ -12,6 +12,9 @@
 {% for result in results %}
 <div class="content-box">
   <div class="content-box-title">{{ result.name }}</div>
+  <div class="pull-right">
+    <a class="btn btn-default" href="results/?id_name={{ result.identifier|urlencode }}">View Donation History</a>
+  </div>
   <br>
   State: {{ result.state }}
   <br>

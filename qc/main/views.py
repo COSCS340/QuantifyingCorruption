@@ -37,6 +37,15 @@ def about(request):
     context = {}
     return render(request, 'main/about.html', context=context)
 
+def results(request):
+    context = {}
+    id = request.GET.get('id_name')
+    if (id != None):
+        dono = Legislator.objects.get(identifier=id)
+        context['results'] = dono
+    print(context)
+    return render(request, 'main/results.html', context=context)
+
 class SearchResult:
     def __init__(self, title, text, link):
         self.title = title
