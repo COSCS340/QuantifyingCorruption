@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Legislator
 
+import pandas as pd
+
 # Create your views here.
 def helloworld(request):
     context = {}
@@ -39,20 +41,34 @@ def about(request):
 
 def populate(request):
     context = { "success" : "success" }
-    fields = ["name", "party", "state" ]
+    fields = ["identifier", "name", "party", "state", "donoSetOne", "donoSetTwo", "donoSetThree", "donoSetFour", "median", "individual", "pac" ]
+    cav = None
     try:
-        with open("../data/qc-working.csv", "r") as f:
-            f.readline()
-            for line in f:
-                l = Legislator(**dict(zip(fields, line.split(",")[3:6])))
-                l.save()
-                pass
+        csv = pd.read_csv("../data/qc-working.csv")
     except Exception as e:
-        context["success"] = "Failed"
-        context["error"] = str(e)
+        context["error"] = [str(e)]
+        return render(request, 'main/populate.html', context=context)
+
+    for i,line in enumerate(csv.to_dict(orient='records')):
+        try:
+            l = Legislator(**line)
+            l.save()
+        except Exception as e:
+            context["success"] = "Failed"
+            if "error" not in context:
+                context["error"] = []
+            context["error"].append(str(e) + ("\t\tLine %d: " % i) + line)
 
     return render(request, 'main/populate.html', context=context)
 
+def results(request):
+    context = {}
+    id = request.GET.get('id_name')
+    if (id != None):
+        dono = Legislator.objects.get(identifier=id)
+        context['results'] = dono
+    print(context)
+    return render(request, 'main/results.html', context=context)
 
 class SearchResult:
     def __init__(self, title, text, link):

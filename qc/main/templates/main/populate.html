@@ -1,5 +1,7 @@
 Database Population: {{ success }}
 {% if error %}
-<br>
-{{ error }}
+{% for e in error %}
+<br>{{e}}
+{% endfor %}
+
 {% endif %}
