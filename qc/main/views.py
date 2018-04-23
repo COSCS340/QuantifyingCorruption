@@ -25,7 +25,7 @@ def search(request):
             for result in legislators.filter(**{filter_field.name + "__icontains": query}).all():
                 results.add(result)
         print(results)
-        context['results'] = sorted(list(results), key=lambda x: x.individual + x.pac)
+        context['results'] = sorted(list(results), key=lambda x: x.individual + x.pac, reverse=True)
     else:
         context['results'] = list()
     return render(request, 'main/search.html', context)
