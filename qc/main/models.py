@@ -7,7 +7,7 @@ class Legislator(models.Model):
     name = models.CharField(max_length=100)
     state = models.CharField(max_length=2)
     party = models.CharField(max_length=2, choices=PARTY, default='I')
-    identifier = models.CharField(max_length=9)
+    cand_id = models.CharField(max_length=9)
     mean = models.FloatField(default=0)
     median = models.FloatField(default=0)
     individual = models.FloatField(default=0)

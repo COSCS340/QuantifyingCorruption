@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Legislator
 
+import pandas as pd
+
 # Create your views here.
 def helloworld(request):
     context = {}
@@ -36,6 +38,28 @@ def legislator(request, legislator_id):
 def about(request):
     context = {}
     return render(request, 'main/about.html', context=context)
+
+def populate(request):
+    context = { "success" : "success" }
+    fields = ["identifier", "name", "party", "state", "donoSetOne", "donoSetTwo", "donoSetThree", "donoSetFour", "median", "individual", "pac" ]
+    cav = None
+    try:
+        csv = pd.read_csv("../data/qc-working.csv")
+    except Exception as e:
+        context["error"] = [str(e)]
+        return render(request, 'main/populate.html', context=context)
+
+    for i,line in enumerate(csv.to_dict(orient='records')):
+        try:
+            l = Legislator(**line)
+            l.save()
+        except Exception as e:
+            context["success"] = "Failed"
+            if "error" not in context:
+                context["error"] = []
+            context["error"].append(str(e) + ("\t\tLine %d: " % i) + line)
+
+    return render(request, 'main/populate.html', context=context)
 
 def results(request):
     context = {}

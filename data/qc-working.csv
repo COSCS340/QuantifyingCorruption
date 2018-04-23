@@ -1,4 +1,4 @@
-cand_id,name,party,state,0,1,2,3,median,mean,individual,pac
+cand_id,name,party,state,donoSetOne,donoSetTwo,donoSetThree,donoSetFour,median,mean,individual,pac
 S8WI00026,Russ Feingold,D,WI,15432002,2634419,376308,111581,50,234.8832609,15293484,14847838
 H2NY14037,Carolyn B Maloney,D,NY,1429068,250400,0,0,500,798.4123616,865479,787910
 H8MA02041,Richard E Neal,D,MA,1479123,375000,0,0,500,798.7812995,504031,1319342
