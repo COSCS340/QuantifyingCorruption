@@ -40,6 +40,7 @@ def about(request):
     return render(request, 'main/about.html', context=context)
 
 def populate(request):
+    Legislator.objects.all().delete()
     context = { "success" : "success" }
     fields = ["identifier", "name", "party", "state", "donoSetOne", "donoSetTwo", "donoSetThree", "donoSetFour", "median", "individual", "pac" ]
     cav = None
