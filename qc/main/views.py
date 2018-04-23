@@ -47,9 +47,12 @@ def populate(request):
     try:
         csv = pd.read_csv("main/qc-working.csv")
     except Exception as e:
-        context["error"] = [str(e)]
-        print(os.getcwd())
-        return render(request, 'main/populate.html', context=context)
+        try:
+            csv = pd.read_csv("qc/main/qc-working.csv")
+        except Exception as e:
+            context["error"] = [str(e)]
+            print(os.getcwd())
+            return render(request, 'main/populate.html', context=context)
 
     for i,line in enumerate(csv.to_dict(orient='records')):
         try:
