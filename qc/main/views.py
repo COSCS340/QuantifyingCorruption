@@ -40,7 +40,7 @@ def about(request):
 def results(request):
     context = {}
     id = request.GET.get('id_name')
-    if (id != None):
+    if id is not None:
         dono = Legislator.objects.get(identifier=id)
         context['results'] = dono
     print(context)
