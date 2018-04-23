@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .models import Legislator
 
 import pandas as pd
+import os
 
 # Create your views here.
 def helloworld(request):
@@ -44,9 +45,10 @@ def populate(request):
     fields = ["identifier", "name", "party", "state", "donoSetOne", "donoSetTwo", "donoSetThree", "donoSetFour", "median", "individual", "pac" ]
     cav = None
     try:
-        csv = pd.read_csv("../data/qc-working.csv")
+        csv = pd.read_csv("main/qc-working.csv")
     except Exception as e:
         context["error"] = [str(e)]
+        print(os.getcwd())
         return render(request, 'main/populate.html', context=context)
 
     for i,line in enumerate(csv.to_dict(orient='records')):
