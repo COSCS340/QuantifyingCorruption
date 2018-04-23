@@ -1,6 +1,45 @@
 {% extends 'main/base.html' %}
 {% load static %}
+{% block menuextend %}
+<ul class="nav navbar-nav navbar-left">
+  <li><a href="/">Home</a></li>
+  <li><a href="/search">Search</a></li>
+  <li class="active"><a href="/about/">About</a></li>
+</ul>
+{% endblock %}
+
 {% block body %}
-<div class="main-content">
+<div class="jumbotron">
+<div class="container text-center">
+  <h1 class="display-3">About Us</h1>
+  <p>We are building a web app to allow citizens a more transparent look into campaign donations.</p>
+  <p><a class="btn btn-primary btn-lg" href="https://github.com/COSCS340/QuantifyingCorruption/blob/master/proposal.md" role="button">Learn more &raquo;</a></p>
 </div>
+</div>
+
+<div class="container" id="aboutHeaders">
+<!-- Example row of columns -->
+<div class="row">
+  <div class="col-md-6 text-center">
+    <i class="fas fa-database fa-5x"></i>
+    <h2>The Data</h2>
+    <p>Our data comes from a group of students currently participating in an independent study.
+      Their study dives deep into how lobbyist/donator party affiliation affects the political party affiliation of the representatives on the receiving end.
+      Check out the data below.</p>
+    <p><a class="btn btn-warning" href="https://github.com/COSCS340/QuantifyingCorruption/blob/master/qc/main/qc-working.csv" role="button">View Data &raquo;</a></p>
+  </div>
+  <div class="col-md-6 text-center">
+    <i class="fab fa-github fa-5x"></i>
+    <h2>The Technology</h2>
+    <p>We built this project using a Django backend with Python 3.
+      The app is hosted on Heroku with a SQLite database.
+      The styling was done using Bootstrap 3 and HTML.
+      Data visualization was done using Chartjs. Check out the codebase below. </p>
+    <p><a class="btn btn-warning" href="https://github.com/COSCS340/QuantifyingCorruption" role="button">View Codebase &raquo;</a></p>
+  </div>
+</div>
+
+<hr>
+
+</div> <!-- /container -->
 {% endblock %}

@@ -3,6 +3,21 @@ body {
   background-color: #505050;
 }
 
+.jumbotron {
+  background-color: #505050;
+  color: #FFFFFF;
+
+}
+
+#aboutHeaders {
+  color: #FFFFFF;
+}
+
+#aboutHeaders p {
+  color: #c0c0c0;
+  font-size: 17px;
+}
+
 .vertical-align {
   display: flex;
   align-items: center;
