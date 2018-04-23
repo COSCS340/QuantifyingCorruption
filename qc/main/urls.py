@@ -9,5 +9,6 @@ urlpatterns = [
     path('legislator/<int:legislator_id>', views.legislator, name='legislator'),
     path('hello/', views.helloworld, name='helloworld'),
     path('about/', views.about, name='about'),
+    path('populate', views.populate, name='populate'),
     path('', views.splash, name='splash'),
 ]
