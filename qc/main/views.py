@@ -64,8 +64,8 @@ def populate(request):
 def results(request):
     context = {}
     id = request.GET.get('id_name')
-    if (id != None):
-        dono = Legislator.objects.get(identifier=id)
+    if id is not None:
+        dono = Legislator.objects.get(cand_id=id)
         context['results'] = dono
     print(context)
     return render(request, 'main/results.html', context=context)
