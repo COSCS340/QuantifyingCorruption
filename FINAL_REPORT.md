@@ -15,7 +15,7 @@ of influence to those with more financial resources. This creates an undesirable
 economic resources will pursue goals that reinforce their control over those resources, without regard for the
 well-being of others. Previously this issue has been explored statistically, but in order to truly be made operational it must be presented in an format that is both accessible and easily understood.
 
-We created a [free web app](http://quantifying-corruption.herokuapp.com/) to allow the average citizen to monitor their representative's campaign contributions. Our application condenses data from [Open Secrets](www.opensecrets.org) into a user frendly format with visualizations.
+We created a [free web app](http://quantifying-corruption.herokuapp.com/) to allow the average citizen to monitor their representative's campaign contributions. Our application condenses data from [Open Secrets](http://www.opensecrets.org) into a user frendly format with visualizations.
 
 ### Project Results
 As a team we consider the final project a success. We successfully created a product which can help the public stay informed on political contributions to specific candidtates. While we did not implement some specific features and some specific data, such as NRA donations, was never visualized we did in the end create a successful project which exceeded the minimum expectation.
@@ -54,7 +54,7 @@ The core framework we're using for this project is Django which is written in Py
   1. Successful deployment on Heroku: View [here](http://quantifying-corruption.herokuapp.com/)
   2. Splash/search page: ![View](https://i.imgur.com/AHjr1dy.jpg)
   3. Search functionality: ![View](https://i.imgur.com/BfFvzvw.jpg)
-  4. Data Visualizations: ![View](http://quantifying-corruption.herokuapp.com/results/?id_name=S0FL00338)
+  4. Data Visualizations: ![View](visualizations.png)
 
 **Successful Tests Run**:
   - Accessing the web-app from several devices.
