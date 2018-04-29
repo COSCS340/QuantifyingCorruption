@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Legislator
 
+import pandas as pd
+import os
+
 # Create your views here.
 def helloworld(request):
     context = {}
@@ -22,7 +25,7 @@ def search(request):
             for result in legislators.filter(**{filter_field.name + "__icontains": query}).all():
                 results.add(result)
         print(results)
-        context['results'] = list(results)
+        context['results'] = sorted(list(results), key=lambda x: x.individual + x.pac, reverse=True)
     else:
         context['results'] = list()
     return render(request, 'main/search.html', context)
@@ -36,6 +39,42 @@ def legislator(request, legislator_id):
 def about(request):
     context = {}
     return render(request, 'main/about.html', context=context)
+
+def populate(request):
+    Legislator.objects.all().delete()
+    context = { "success" : "success" }
+    fields = ["identifier", "name", "party", "state", "donoSetOne", "donoSetTwo", "donoSetThree", "donoSetFour", "median", "individual", "pac" ]
+    cav = None
+    try:
+        csv = pd.read_csv("main/qc-working.csv")
+    except Exception as e:
+        try:
+            csv = pd.read_csv("qc/main/qc-working.csv")
+        except Exception as e:
+            context["error"] = [str(e)]
+            print(os.getcwd())
+            return render(request, 'main/populate.html', context=context)
+
+    for i,line in enumerate(csv.to_dict(orient='records')):
+        try:
+            l = Legislator(**line)
+            l.save()
+        except Exception as e:
+            context["success"] = "Failed"
+            if "error" not in context:
+                context["error"] = []
+            context["error"].append(str(e) + ("\t\tLine %d: " % i) + line)
+
+    return render(request, 'main/populate.html', context=context)
+
+def results(request):
+    context = {}
+    id = request.GET.get('id_name')
+    if id is not None:
+        dono = Legislator.objects.get(cand_id=id)
+        context['results'] = dono
+    print(context)
+    return render(request, 'main/results.html', context=context)
 
 class SearchResult:
     def __init__(self, title, text, link):

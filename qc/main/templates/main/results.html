@@ -1,0 +1,186 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load humanize %}
+
+{% block menuextend %}
+<ul class="nav navbar-nav navbar-left">
+  <li><a href="/">Home</a></li>
+  <li><a href="/search">Search</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="page-header">
+    <h1 class="text-center">{{ results.name }}</h1>
+  </div>
+  <div class="row vertical-align">
+      <div class="col-xs-4">
+      <div class="panel panel-info" id="result-box">
+        <div class="panel-heading">
+          <h1 class="panel-title text-center"><strong>Legislator Summary</strong></h1>
+        </div>
+          <div class="panel-body">
+            <dl class="dl-horizontal">
+              <dt>State:</dt>
+              <dd>{{ results.state }}</dd>
+              <br>
+              <dt>Party:</dt>
+              <dd>{{ results.get_party_display }}</dd>
+              <br>
+              <dt>Total Donations:</dt>
+              <dd> ${{ results.pac|add:results.individual|intcomma }}</dd>
+              <br>
+              <dt> Mean Donation:</dt>
+              <dd> ${{ results.mean|floatformat:"2"|intcomma }}</dd>
+              <br>
+              <dt> Median Donation:</dt>
+              <dd> ${{ results.median|floatformat:"0"|intcomma }}</dd>
+            </dl>
+          </div>
+        </div>
+    </div>
+    <div class="col-xs-8">
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="col-xs-12">
+      <canvas id="barChart"></canvas>
+    </div>
+</div>
+
+<script>
+var barLabels = ["$0-5,000 Donations", "$5,001-10,000 Donations", "$10,001-15,000 Donations", "$15,001-20,000 Donations"]
+var pieLabels = ["Total PAC Donations", "Total Individual Donations"]
+
+
+var barData = [{{ results.donoSetOne }}, {{ results.donoSetTwo }}, {{ results.donoSetThree }},
+  {{ results.donoSetFour }}]
+var pieData = [{{ results.pac }}, {{ results.individual }}]
+
+var ctx = document.getElementById("barChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: barLabels,
+        datasets: [{
+            data: barData,
+            backgroundColor: [
+                'rgba(54, 162, 235, .5)',
+                'rgba(255, 159, 64, .5)',
+                'rgba(153, 102, 255, .5)',
+                'rgba(255, 99, 132, .5)'
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255,99,132, 1)'
+            ],
+            borderWidth: 1
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "Donations By Bin Amounts",
+          fontColor: 'white',
+          fontSize: 20,
+          fontStyle: 'bold'
+        },
+
+        legend: {
+          display: false
+        },
+
+        scales:{
+          xAxes: [{
+            ticks: {
+              fontColor: 'white',
+              fontSize: 15,
+            },
+            barPercentage: 1.0,
+            categoryPercentage: 1.0,
+          }],
+          yAxes: [{
+            ticks: {
+              fontColor: 'white',
+              fontSize: 15,
+              callback: function(value, index, values) {
+                if (parseInt(value) >= 1000) {
+                  return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                } else {
+                  return '$' + value;
+                }
+              }
+            },
+          }]
+        },
+
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem, data) {
+              var value = data.datasets[0].data[tooltipItem.index];
+              if(parseInt(value) >= 1000){
+                 return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+              } else {
+                 return '$' + value;
+              }
+          }
+        }
+      }
+    }
+});
+
+var ctx2 = document.getElementById("pieChart").getContext('2d');
+var myChart = new Chart(ctx2, {
+    type: 'pie',
+    data: {
+        labels: pieLabels,
+        datasets: [{
+            label: "Amount",
+            data: pieData,
+            backgroundColor: [
+                'rgba(255, 36, 50, .8)',
+                'rgba(54, 162, 235, .8)',
+            ],
+            borderWidth: 0
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Individual vs. PAC Donations",
+        fontColor: "white",
+        fontSize: 20,
+        fontStyle: 'bold'
+      },
+
+      legend: {
+        display: true,
+        position: 'bottom',
+        labels: {
+          fontColor: '#dbdbdb',
+          fontStyle: 'oblique'
+        }
+      },
+
+      tooltips: {
+        callbacks: {
+          label: function(tooltipItem, data) {
+            var value = data.datasets[0].data[tooltipItem.index];
+            if(parseInt(value) >= 1000){
+               return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            } else {
+               return '$' + value;
+            }
+          }
+        }
+      }
+    }
+});
+</script>
+{% endblock %}
