@@ -52,9 +52,15 @@ The core framework we're using for this project is Django which is written in Py
 
 **What Works**:
   1. Successful deployment on Heroku: View [here](http://quantifying-corruption.herokuapp.com/)
-  2. Splash/search page: ![View](https://i.imgur.com/AHjr1dy.jpg)
-  3. Search functionality: ![View](https://i.imgur.com/BfFvzvw.jpg)
-  4. Data Visualizations: ![View](visualizations.png)
+  2. Splash/search page:
+
+  ![View](https://i.imgur.com/AHjr1dy.jpg)
+  3. Search functionality:
+
+  ![View](https://i.imgur.com/BfFvzvw.jpg)
+  4. Data Visualizations: 
+  
+  ![View](visualizations.png)
 
 **Successful Tests Run**:
   - Accessing the web-app from several devices.
