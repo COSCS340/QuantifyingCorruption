@@ -96,6 +96,7 @@ Team member roles since the start of this project:
 As the project progressed it became clear that William and Andrey were taking on key leadership roles and Chris and Kelsey took on supporting roles.
 
 ## Project Management
+Unfortunately, we were unable to meet all of our goals for this project; however, we were successful in achieving the vast majority of our goals. We were a little ambitious on many aspects and let some stretch goals creep into the scope of our project. We were unable to get the full extent of data that we had hoped and thus did not make visualizations for all of the data that we had originally planned such as which PACs were making donations, a better scope of individual donation amounts, election outcomes, bill/law statistics, and a full filterable ranking of top donation receivers. We also struggled at times with communications amongst ourselves and with our collaborating group as well as with consistently finding ways to divvy up and delegate meaningful tasks to all group members. We learned a lot and accomplished a lot, and while we were not perfect, we are proud of what we accomplished this semester.
 
 ## Reflection
 - What went well?
