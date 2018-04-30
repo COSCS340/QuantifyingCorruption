@@ -43,12 +43,15 @@ Because this project has the potential to reveal a lot about politicians in a ti
    - **Date**: Sprint 3
    - **Motivation**: Thematic elements to go along with "political corruption"
    - **Desc**: Rather than just going for a purely modern look, we decided to adjust this requirement a bit to also account for thematic elements. We ended up with a combination between modern and symbolic for our splash page.
-
+5. "Create data visualizations and charts using D3"
+   - **Date**: Sprint 4
+   - **Motivation**: D3 was overkill for what we were looking for towards the end of our project
+   - **Desc**: Rather than learning/using D3, we ended up going with a much more direct charting framework, Chartjs, to deliver a results page that we were lagging behind on.
 ## Technology
 
 **Architecture**:
 
-The core framework we're using for this project is Django which is written in Python. Django by default uses a SQLite database to store default django records (mostly users) and our custom models. We utilize the Jinja templating engine to put custom data into our html web pages, and a bootstrap frontend with vanilla javascript. We are hosting our project on a Heroku backend that supplies us with a platform without needing to configure or maintain our own virtual server; the Heroku backend uses a PostgreSQL database.
+The core framework we're using for this project is Django which is written in Python. Django by default uses a SQLite database to store default django records (mostly users) and our custom models. We utilize the Jinja templating engine to put custom data into our html web pages, and a bootstrap frontend with vanilla javascript. The Data Visualizations/charts were done using Chatjs. We are hosting our project on a Heroku backend that supplies us with a platform without needing to configure or maintain our own virtual server; the Heroku backend uses a PostgreSQL database.
 
 **What Works**:
   1. Successful deployment on Heroku: View [here](http://quantifying-corruption.herokuapp.com/)
@@ -87,7 +90,7 @@ Team member roles since the start of this project:
   1. William Lifferth
      - Project lead, main contributor and project designer
   2. Andrey Karnauch
-     - Initial html/styling and organizing issues/sprints
+     - Data Visualization/Results page and organizing issues/sprints
   3. Chris Dean
      - Initial Heroku integrator and model designer
   4. Kelsey Veca
